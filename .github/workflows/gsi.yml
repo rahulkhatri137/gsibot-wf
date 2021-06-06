@@ -5,7 +5,7 @@ on: [push]
 env:
   ROM_URL: https://www.priiiyocloud.workers.dev/0://blueline-spb1.210331.013-factory-517d58c9/blueline-spb1.210331.013/image-blueline-spb1.210331.013.zip
   ROM_NAME: Generic:Pixel3
-  ZIP_NAME: Pixel3-AB-S-RK137GSI.zip
+  ZIP_NAME: Pixel3-AB-S-20210606-RK137GSI.zip
   TZ: Asia/Kolkata
 jobs:
   build:
