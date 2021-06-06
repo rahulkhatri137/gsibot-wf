@@ -48,7 +48,7 @@ jobs:
               mkdir final
               sudo chmod -R 777 ErfanGSIs/output
               cd ErfanGSIs/output
-              gzip -c -r *.img > $ZIP_NAME.gz
+              gzip -r *.img > $ZIP_NAME.gz
               expect -c " 
               spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
               expect \"yes/no\"
