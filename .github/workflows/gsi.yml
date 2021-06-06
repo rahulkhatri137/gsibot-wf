@@ -5,7 +5,7 @@ on: [push]
 env:
   ROM_URL: https://www.priiiyocloud.workers.dev/0://blueline-spb1.210331.013-factory-517d58c9/blueline-spb1.210331.013/image-blueline-spb1.210331.013.zip
   ROM_NAME: Generic:Pixel3
-  ZIP_NAME: Pixel3-AB-S-RK137GSI
+  ZIP_NAME: Pixel3-AB-S-RK137GSI.zip
   TZ: Asia/Kolkata
 jobs:
   build:
@@ -48,7 +48,7 @@ jobs:
               mkdir final
               sudo chmod -R 777 ErfanGSIs/output
               cd ErfanGSIs/output
-              gzip -r *.img > $ZIP_NAME.gz
+              zip -r $ZIP_NAME *-AB-*.img
               expect -c " 
               spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
               expect \"yes/no\"
@@ -58,7 +58,7 @@ jobs:
               expect \"sftp> \"
               send \"cd ${{ secrets.SFDIR }}\r\"
               set timeout -1
-              send \"put $ZIP_NAME.gz\r\"
+              send \"put $ZIP_NAME\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
