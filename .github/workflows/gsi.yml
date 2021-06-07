@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM_URL: http://boxmirrorbomt.boxmirrorbomt.workers.dev/0:/AospExtended-v8.2-lava-UNOFFICIAL-20210530-0921.zip 
-  ROM_NAME: Generic:AEX-8.2-T
+  ROM_NAME: Generic:AEX-8.2-t
   ZIP_NAME: AEX-8.2-T-AB-11-20210607-RK137GSI.zip
   TZ: Asia/Kolkata
 jobs:
