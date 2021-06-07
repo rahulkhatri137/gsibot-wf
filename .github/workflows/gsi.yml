@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: http://boxmirrorbomt.boxmirrorbomt.workers.dev/0:/AospExtended-v8.2-lava-UNOFFICIAL-20210530-0921.zip 
-  ROM_NAME: Generic:AEX-8.2-t
-  ZIP_NAME: AEX-8.2-T-AB-11-20210607-RK137GSI.zip
+  ROM_URL: https://mirror.rahul137.workers.dev/Cherish-OS-v2.5-20210524-0253-begonia-OFFICIAL-GApps.zip 
+  ROM_NAME: Generic:CherishOS-2.5-T
+  ZIP_NAME: CherishOS-2.5-T-AB-11-20210607-RK137GSI.zip
   TZ: Asia/Kolkata
 jobs:
   build:
