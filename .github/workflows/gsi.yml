@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/Cherish-OS-v2.5-20210524-0253-begonia-OFFICIAL-GApps.zip 
-  ROM_NAME: Generic:CherishOS-2.5-T
-  ZIP_NAME: CherishOS-2.5-T-AB-11-20210607-RK137GSI.zip
+  ROM_URL: https://mirror.rahul137.workers.dev/dotOS-R-v5.1-begonia-OFFICIAL-20210527-2345.zip 
+  ROM_NAME: Generic:DotOS-5.1-T
+  ZIP_NAME: DotOs-5.1-T-AB-11-20210607-RK137GSI.zip
   TZ: Asia/Kolkata
 jobs:
   build:
@@ -31,7 +31,7 @@ jobs:
             sudo -E apt-get -qq install git openjdk-8-jdk wget expect
 
        
-       - name: Clone ErfanGSI Source Code
+       - name: Clone ErfanGSIs
          run: git clone --recurse-submodules https://github.com/rahulkhatri137/ErfanGSIs
        
        - name: Setting up ErfanGSI requirements
@@ -40,7 +40,7 @@ jobs:
               cd ErfanGSIs
               sudo bash setup.sh
        
-       - name: Download Stock Rom & Generate GSI
+       - name: Download Rom & Generate GSI
          run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
        
        - name: Zip AB and upload 
