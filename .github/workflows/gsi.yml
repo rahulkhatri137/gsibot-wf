@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: http://boxmirrorbomt.boxmirrorbomt1.workers.dev/0:/dotOS-R-v5.1-lava-UNOFFICIAL-20210530-0909.zip 
-  ROM_NAME: Generic:DotOS-5.1-TL
-  ZIP_NAME: DotOs-5.1-TL-AB-11-20210607-RK137GSI.zip
+  ROM_URL: https://mirror.rahul137.workers.dev/dotOS-R-v5.1-begonia-OFFICIAL-20210527-2345.zip 
+  ROM_NAME: Generic:DotOS-5.1-TB
+  ZIP_NAME: DotOs-5.1-TB-AB-11-20210608-RK137GSI.zip
   TZ: Asia/Kolkata
 jobs:
   build:
@@ -32,7 +32,7 @@ jobs:
 
        
        - name: Clone ErfanGSIs
-         run: git clone --recurse-submodules https://github.com/rahulkhatri137/ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/rahulkhatri137/Erfan ErfanGSIs
        
        - name: Setting up ErfanGSI requirements
          run: |
