@@ -5,7 +5,7 @@ on: [push]
 env:
   ROM_URL: https://mirror.rahul137.workers.dev/Floko-v4.0-RMX2020-20210508-UNOFFICIAL.zip 
   ROM_NAME: Generic:Floko-t
-  ZIP_NAME: Floko-t-RK137GSI.zip
+  ZIP_NAME: Floko-t2-RK137GSI.zip
   TZ: Asia/Kolkata
 jobs:
   build:
