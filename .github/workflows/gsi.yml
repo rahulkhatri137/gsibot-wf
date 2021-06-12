@@ -47,9 +47,12 @@ jobs:
          run: |
               mkdir final
               sudo chmod -R 777 ErfanGSIs/output
-              cd ErfanGSIs/output
+              cd ErfanGSIs/outputp
               ls
-              xz -fev9 *-AB-*.img
+              sudo chmod -R 777 *.img
+              rm -rf *txt
+              ls
+              xz -fev9 *.img
               expect -c " 
               spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
               expect \"yes/no\"
