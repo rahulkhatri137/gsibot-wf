@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/Floko-v4.0-RMX2020-20210508-UNOFFICIAL.zip 
-  ROM_NAME: Generic:Floko-t
-  ZIP_NAME: Floko-t2-RK137GSI.zip
+  ROM_URL: https://mirror.rahul137.workers.dev/Fluid-1.5-Rum-UNOFFICIAL-RMX2020-20210510-gapped.zip 
+  ROM_NAME: Generic:Fluid-1.5
+  ZIP_NAME: Fluid-1.5-RK137GSI.zip
   TZ: Asia/Kolkata
 jobs:
   build:
@@ -45,14 +45,19 @@ jobs:
        
        - name: XZip AB and upload 
          run: |
-              mkdir final
               sudo chmod -R 777 ErfanGSIs/output
-              cd ErfanGSIs/outputp
+              cd ErfanGSIs/output
               ls
               sudo chmod -R 777 *.img
               rm -rf *txt
               ls
-              xz -fev9 *.img
+              mkdir -p final
+              mv *.img final
+              ls
+              cd final
+              ls
+              xz -fev9 *
+              ls
               expect -c " 
               spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
               expect \"yes/no\"
