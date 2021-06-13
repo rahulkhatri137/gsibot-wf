@@ -51,7 +51,7 @@ jobs:
               sudo chmod -R 777 *.img
               rm -rf *txt
               ls
-              xz -fev9 *
+              zip -r $ZIP_NAME *-AB-*.img
               ls
               expect -c " 
               spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
@@ -62,7 +62,7 @@ jobs:
               expect \"sftp> \"
               send \"cd ${{ secrets.SFDIR }}\r\"
               set timeout -1
-              send \"put *.xz\r\"
+              send \"put $ZIP_NAME\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
