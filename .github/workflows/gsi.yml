@@ -51,11 +51,6 @@ jobs:
               sudo chmod -R 777 *.img
               rm -rf *txt
               ls
-              mkdir -p final
-              mv *.img final
-              ls
-              cd final
-              ls
               xz -fev9 *
               ls
               expect -c " 
