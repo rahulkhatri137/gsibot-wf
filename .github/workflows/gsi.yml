@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/Fluid-1.5-Rum-UNOFFICIAL-RMX2020-20210510-gapped.zip 
-  ROM_NAME: Generic:Fluid-1.5
-  ZIP_NAME: Fluid-1.5-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/Nusantara_v3.0-11-RMX2020-Gapps-13062021-OFFICIAL-1214.zip 
+  ROM_NAME: Generic:Nusantara-3.0
+  ZIP_NAME: Nusantara-3.0-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
