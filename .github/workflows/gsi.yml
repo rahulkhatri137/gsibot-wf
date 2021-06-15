@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/Nusantara_v3.0-11-RMX2020-Gapps-13062021-OFFICIAL-1214.zip 
-  ROM_NAME: Generic:Nusantara-3.0
-  ZIP_NAME: Nusantara-3.0-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/CipherOS-1.7-ASTRA-20210614-1356-RMX1831-OFFICIAL-VANILLA.zip 
+  ROM_NAME: Generic:CipherOS-1.7
+  ZIP_NAME: CipherOS-1.7-20210615-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
