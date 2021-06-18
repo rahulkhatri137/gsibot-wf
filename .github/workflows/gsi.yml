@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/CipherOS-1.7-ASTRA-20210614-1356-RMX1831-OFFICIAL-VANILLA.zip 
-  ROM_NAME: Generic:CipherOS-1.7
-  ZIP_NAME: CipherOS-1.7-20210615-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/PixelPlusUI_3.6_RMX2185-11.0-20210617-1608-OFFICIAL.zip
+  ROM_NAME: Generic:PPUI-3.6
+  ZIP_NAME: PPUI-3.6-20210618-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
