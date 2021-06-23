@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/PixelPlusUI_3.6_RMX2185-11.0-20210617-1608-OFFICIAL.zip
-  ROM_NAME: Generic:PPUI-3.6
-  ZIP_NAME: PPUI-3.6-20210618-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/Fluid-1.6-Rum-UNOFFICIAL-CPH1859-20210616.zip
+  ROM_NAME: Generic:Fluid-1.6
+  ZIP_NAME: Fluid-1.6-20210623-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
