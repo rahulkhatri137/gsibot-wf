@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/Havoc-OS-v4.6-20210620-CPH1859-Unofficial.zip
-  ROM_NAME: Generic:HavocOS-4.6
-  ZIP_NAME: HavocOS-4.6-20210627-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/dotOS-R-v5.1-RMX1941-UNOFFICIAL-20210529-2316.zip
+  ROM_NAME: Generic:Dot-5.1-test
+  ZIP_NAME: Dot-5.1-test-20210627-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
