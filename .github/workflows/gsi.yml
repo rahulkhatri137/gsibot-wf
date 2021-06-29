@@ -3,7 +3,7 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/dotOS-R-v5.1-RMX1941-UNOFFICIAL-20210529-2316.zip
+  ROM_URL: https://cloud.minati.workers.dev/dotOS-R-v5.1-RMX1941-UNOFFICIAL-20210529-2316.zip
   ROM_NAME: Generic:Dot-5.1-test
   ZIP_NAME: Dot-5.1-test-20210627-RK137GSI.img
   TZ: Asia/Kolkata
@@ -32,7 +32,7 @@ jobs:
 
        
        - name: Clone ErfanGSIs
-         run: git clone --recurse-submodules https://github.com/rahulkhatri137/Erfan ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs
        
        - name: Setting up ErfanGSI requirements
          run: |
