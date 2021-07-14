@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://lucky-cell-274d.carn4ge.workers.dev/0:/WaveOS_RMX1941-R-v4.5-20210704-1444-UNOFFICIAL.zip
-  ROM_NAME: Generic:WaveOS-4.5
-  ZIP_NAME: WaveOS-4.5-20210706-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/blueline-spb3.210618.013-factory-4f875aa4/blueline-spb3.210618.013/image-blueline-spb3.210618.013.zip
+  ROM_NAME: Generic:Pixel-3-b3-e
+  ZIP_NAME: Pixel-3-b3-e-S-20210714-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
