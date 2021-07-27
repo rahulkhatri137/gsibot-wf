@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/blueline-spb3.210618.013-factory-4f875aa4/blueline-spb3.210618.013/image-blueline-spb3.210618.013.zip
-  ROM_NAME: Generic:Pixel-3-b3-e
-  ZIP_NAME: Pixel-3-b3-e-S-20210714-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/miui_MERLINRUGlobal_V12.0.1.0.RJORUXM_d2378943b2_11.0.zip
+  ROM_NAME: MIUI:MIUI-12.0.1.0
+  ZIP_NAME: MIUI-12-11-20210727-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
@@ -32,7 +32,7 @@ jobs:
 
        
        - name: Clone ErfanGSIs
-         run: git clone --recurse-submodules https://github.com/Rahul-o/ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/mrrk137/ErfanGSIs
        
        - name: Setting up ErfanGSI requirements
          run: |
