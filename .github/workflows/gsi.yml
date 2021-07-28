@@ -41,7 +41,6 @@ jobs:
               sudo bash setup.sh
        
        - name: Download Rom & Generate GSI
-         continue-on-error: true
          run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
        
        - name: XZip AB and upload 
