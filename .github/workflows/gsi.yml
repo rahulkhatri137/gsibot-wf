@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/redfin-spb3.210618.016-factory-f4abfb53/redfin-spb3.210618.016/image-redfin-spb3.210618.016.zip
-  ROM_NAME: Generic:Pixel5-beta-3.1
-  ZIP_NAME: Pixel5-b3.1-S-20210727-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/memeUI.ozip
+  ROM_NAME: Generic:MemeUI
+  ZIP_NAME: MemeUI-11-20210728-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
