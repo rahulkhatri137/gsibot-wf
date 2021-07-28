@@ -49,7 +49,7 @@ jobs:
               cd ErfanGSIs/output
               ls
               sudo chmod -R 777 *.img
-              rm -rf *txt
+              rm -rf *.txt
               ls
               xz -cfev9 * > $ZIP_NAME.xz
               ls
