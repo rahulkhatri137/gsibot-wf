@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://webwerks.dl.sourceforge.net/project/cherish-os/device/RMX1831/Cherish-OS-v2.7.5-20210727-1437-RMX1831-OFFICIAL-Gapps.zip
-  ROM_NAME: Generic:Cherish-test
-  ZIP_NAME: Cherish-test-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/Nusantara_v3.1-11-RMX2020-29072021-OFFICIAL-0118.zip
+  ROM_NAME: Generic:Nusan-3.1
+  ZIP_NAME: Nusan-3.1-test-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
