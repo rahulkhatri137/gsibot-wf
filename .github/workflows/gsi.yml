@@ -34,7 +34,7 @@ jobs:
        - name: Clone ErfanGSIs
          run: git clone --recurse-submodules https://github.com/rahulkhatri137/ErfanGSIs
        
-       - name: Setting up ErfanGSI requirements
+       - name: Setup
          run: |
               sudo chmod -R 777 ErfanGSIs
               cd ErfanGSIs
@@ -43,7 +43,7 @@ jobs:
        - name: Download Rom & Generate GSI
          run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
        
-       - name: XZip AB and upload 
+       - name: XZip
          run: |
               sudo chmod -R 777 ErfanGSIs/output
               cd ErfanGSIs/output
@@ -52,6 +52,11 @@ jobs:
               rm -rf *.txt
               ls
               xz -cfev9 * > $ZIP_NAME.xz
+              ls
+
+       - name: Upload 
+         run: |
+              cd ErfanGSIs/output
               ls
               expect -c " 
               spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
