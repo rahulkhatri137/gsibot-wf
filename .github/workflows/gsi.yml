@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror2.rahul137.workers.dev/0:/Cherish-OS-v2.7.5-20210727-1437-RMX1831-OFFICIAL-Gapps.zip
-  ROM_NAME: Generic:Cherish-n
-  ZIP_NAME: Cherish-n-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/redfin-spb3.210618.016-factory-f4abfb53/redfin-spb3.210618.016/image-redfin-spb3.210618.016.zip
+  ROM_NAME: Generic:Pixel5-b3.1-test
+  ZIP_NAME: Pixel5-b3.1-test-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
