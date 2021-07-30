@@ -44,14 +44,14 @@ jobs:
               cd ErfanGSIs/output
               ls
               sudo chmod -R 777 *.img
-              rm -rf *.txt
+              mkdir -p final ; cp *.img ./final ; cd final
               ls
               xz -cfev9 * > $ZIP_NAME.xz
               ls
 
        - name: Upload 
          run: |
-              cd ErfanGSIs/output
+              cd ErfanGSIs/output/final
               ls
               expect -c " 
               spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
