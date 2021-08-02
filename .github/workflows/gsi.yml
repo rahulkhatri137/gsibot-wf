@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://dl.google.com/developers/android/sc/images/factory/redfin-spb2.210513.011-factory-8407a0ed.zip
-  ROM_NAME: Generic:Pixel5-b3.1-test2
-  ZIP_NAME: Pixel5-b3.1-test2-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/AncientOS-R-Society-v5.5-CPH1859-Iron-20210729-1351-Vanilla.zip
+  ROM_NAME: Generic:Ancient-5.5-2
+  ZIP_NAME: Ancient-5.5-2-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
