@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror2.rahul137.workers.dev/0:/Cherish-OS-v2.7.5-20210727-1437-RMX1831-OFFICIAL-Gapps.zip
-  ROM_NAME: Generic:Cherish-test
-  ZIP_NAME: Cherish-test-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/AncientOS-R-Society-v5.5-CPH1859-Iron-20210729-1351-Vanilla.zip
+  ROM_NAME: Generic:Ancient-5.5
+  ZIP_NAME: Ancient-5.5-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
