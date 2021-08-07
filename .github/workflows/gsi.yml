@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/AncientOS-R-Weeabo-v5.5-RMX2020-Rias_Gremory-20210802-0436-GApps.zip
-  ROM_NAME: Generic:Ancient-5.5-weebo
-  ZIP_NAME: Ancient-5.5-weebo-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/Cherish-OS-v2.8-20210804-1219-RMX1971-OFFICIAL-Vanilla.zip
+  ROM_NAME: Generic:Cherish-2.8
+  ZIP_NAME: Cherish-2.8-1971-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
