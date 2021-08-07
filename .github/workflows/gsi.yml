@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/Cherish-OS-v2.8-20210804-1219-RMX1971-OFFICIAL-Vanilla.zip
+  ROM_URL: https://mirror.rahul137.workers.dev/Cherish-OS-v2.8-20210804-1548-RMX1941-OFFICIAL-Vanilla.zip
   ROM_NAME: Generic:Cherish-2.8
-  ZIP_NAME: Cherish-2.8-1971-RK137GSI.img
+  ZIP_NAME: Cherish-2.8-1941-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
