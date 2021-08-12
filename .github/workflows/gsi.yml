@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/AncientOS-R-Society-v5.5-CPH1859-Iron-20210729-1351-Vanilla.zip
-  ROM_NAME: Generic:Ancient-5.5-2
-  ZIP_NAME: Ancient-5.5-2-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/blueline-spb4.210715.011-factory-67a3e10a/blueline-spb4.210715.011/image-blueline-spb4.210715.011.zip
+  ROM_NAME: Generic:Pixel3-b4
+  ZIP_NAME: Pixel3-b4-v-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
