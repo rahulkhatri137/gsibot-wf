@@ -3,7 +3,7 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://sourceforge.net/projects/ancientrom/files/dipper/AncientOS-R-Society-v5.5-dipper-Iron-20210729-2004-Vanilla.zip/download
+  ROM_URL: https://managedway.dl.sourceforge.net/project/ancientrom/dipper/AncientOS-R-Society-v5.5-dipper-Iron-20210729-2004-Vanilla.zip
   ROM_NAME: Generic:Ancient-5.5-t
   ZIP_NAME: Ancient-t.5-RK137GSI.img
   TZ: Asia/Kolkata
