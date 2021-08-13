@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://managedway.dl.sourceforge.net/project/ancientrom/dipper/AncientOS-R-Society-v5.5-dipper-Iron-20210729-2004-Vanilla.zip
-  ROM_NAME: Generic:Ancient-5.5-t
-  ZIP_NAME: Ancient-t.5-RK137GSI.img
+  ROM_URL: https://master.dl.sourceforge.net/project/cherish-os/device/RMX1805/Cherish-OS-v2.8-20210809-1709-RMX1805-OFFICIAL-Vanilla.zip?viasf=1
+  ROM_NAME: Generic:Cherish-2.8
+  ZIP_NAME: Cherish-2.8-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
