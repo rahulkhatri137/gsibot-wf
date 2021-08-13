@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://managedway.dl.sourceforge.net/project/coltos/ColtOS-v7.x/sanders/ColtOS-11.0-v7.0-sanders-Official-20210628-0108.zip
-  ROM_NAME: Generic:Colt-7
-  ZIP_NAME: Colt-7-RK137GSI.img
+  ROM_URL: https://deac-fra.dl.sourceforge.net/project/coltos/ColtOS-v7.x/sweet/ColtOS-11.0-v7.1-sweet-OFFICIAL-20210812-1154.zip
+  ROM_NAME: Generic:Colt-sweet
+  ZIP_NAME: Colt-sweet-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
