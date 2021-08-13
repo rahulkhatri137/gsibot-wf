@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://deac-fra.dl.sourceforge.net/project/coltos/ColtOS-v7.x/sweet/ColtOS-11.0-v7.1-sweet-OFFICIAL-20210812-1154.zip
-  ROM_NAME: Generic:Colt-sweet
-  ZIP_NAME: Colt-sweet-RK137GSI.img
+  ROM_URL: https://download.ppui.site/eleven/sanders/PixelPlusUI_3.6_sanders-11.0-20210621-0257-OFFICIAL.zip
+  ROM_NAME: Generic:PPUI-3.6
+  ZIP_NAME: PPUI-3.6-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
