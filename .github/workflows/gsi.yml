@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://download.ppui.site/eleven/sanders/PixelPlusUI_3.6_sanders-11.0-20210621-0257-OFFICIAL.zip
-  ROM_NAME: Generic:PPUI-3.6
-  ZIP_NAME: PPUI-3.6-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/Havoc-OS-v4.8-20210808-sanders-Official.zip
+  ROM_NAME: Generic:Havoc-4.8
+  ZIP_NAME: Havoc-4.8-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
