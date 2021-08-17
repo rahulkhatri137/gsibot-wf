@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/Havoc-OS-v4.8-20210808-sanders-Official.zip
-  ROM_NAME: Generic:Havoc-4.8
-  ZIP_NAME: Havoc-4.8-RK137GSI.img
+  ROM_URL: https://download.c.realme.com/osupdate/CPH1861EX_11_OTA_0490_all_sWtP8RDIvyoU.ozip
+  ROM_NAME: ColorOS:CPH1859-C49
+  ZIP_NAME: CPH1859-C49-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
