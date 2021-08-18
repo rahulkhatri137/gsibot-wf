@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS630KL/UL-ASUS_I01WD-ASUS-18.0610.2106.156-1.1.1-user.zip
-  ROM_NAME: Generic:Zenui-Zenfone6 
-  ZIP_NAME: Zenui-Zenfone6-RK137GSI.img
+  ROM_URL: https://mirror.rahul137.workers.dev/INFINIX-NOTE-10-X693-H697BCDEFTU-R-GL-210728V685-RepairMyMobile.zip
+  ROM_NAME: Generic:Infinix
+  ZIP_NAME: Infinix-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
