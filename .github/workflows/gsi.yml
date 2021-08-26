@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://cdn-test-ota.blackshark.com/AWM-A0/20201125155307-bullhead-ota-signed_by_xiaomi_d879da3afc64712efac0975009d43747.zip
-  ROM_NAME: MIUI:Joy-UI
-  ZIP_NAME: JOY-UI-RK137GSI.img
+  ROM_URL: https://download.c.realme.com/osupdate/RMX2111PU_11_OTA_0350_all_1q5mbnWDlhVs.ozip
+  ROM_NAME: Generic:R-UI
+  ZIP_NAME: R-UI-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
