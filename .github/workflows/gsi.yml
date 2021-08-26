@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://master.dl.sourceforge.net/project/projectradiant/eleven/RMX2020/vanilla/ProjectRadiant-1.0-VANILLA-RMX2020-20210815-1507-OFFICIAL.zip?viasf=1
-  ROM_NAME: Generic:ProjectRadiant-1.0
-  ZIP_NAME: ProjectRadiant-1.0-RK137GSI.img
+  ROM_URL: https://download.c.realme.com/osupdate/RMX3171_11_OTA_0190_all_6CL0F6Ae96Vg.ozip
+  ROM_NAME: ColorOS:RUI
+  ZIP_NAME: RUI-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
