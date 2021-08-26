@@ -3,8 +3,8 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://mirror.rahul137.workers.dev/Realme_8_Pro_RMX3081_11_A.30_210422_RFT/Realme_8_Pro_RMX3081_11_A.30_210422_RFT/Firmware/RMX3081export_11_A.30_2021042200170000.ofp
-  ROM_NAME: Generic:R-UI
+  ROM_URL: https://download.c.realme.com/osupdate/RMX3171_11_OTA_0190_all_6CL0F6Ae96Vg.ozip
+  ROM_NAME: ColorOS:R-UI
   ZIP_NAME: R-UI-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
