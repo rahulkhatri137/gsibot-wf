@@ -3,7 +3,7 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://sourceforge.net/projects/emeraldmystic/files/rom/Nusantara_LTS-10-RMX2020-30092021-UNOFFICIAL-0218.zip/download
+  ROM_URL: https://jztkft.dl.sourceforge.net/project/emeraldmystic/rom/Nusantara_LTS-10-RMX2020-30092021-UNOFFICIAL-0218.zip
   ROM_NAME: Generic:NusanLTS
   ZIP_NAME: Nusan-LTS-10-RK137GSI.img
   TZ: Asia/Kolkata
