@@ -27,7 +27,7 @@ jobs:
 
        
        - name: Clone ErfanGSIs
-         run: git clone --recurse-submodules https://github.com/rahulkhatri137/ErfanGSIs
+         run: git clone -b old --recurse-submodules https://github.com/rahulkhatri137/ErfanGSIs
        
        - name: Setup
          run: |
