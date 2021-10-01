@@ -3,7 +3,7 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://jztkft.dl.sourceforge.net/project/emeraldmystic/rom/Nusantara_LTS-10-RMX2020-30092021-UNOFFICIAL-0218.zip
+  ROM_URL: https://liquidtelecom.dl.sourceforge.net/project/emeraldmystic/rom/Nusantara_LTS-10-RMX2020-30092021-UNOFFICIAL-0218.zip
   ROM_NAME: Generic:NusanLTS
   ZIP_NAME: Nusan-LTS-10-RK137GSI.img
   TZ: Asia/Kolkata
@@ -27,7 +27,7 @@ jobs:
 
        
        - name: Clone ErfanGSIs
-         run: git clone -b old --recurse-submodules https://github.com/rahulkhatri137/ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/rahulkhatri137/ErfanGSIs
        
        - name: Setup
          run: |
