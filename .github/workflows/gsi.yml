@@ -49,6 +49,9 @@ jobs:
               xz -cfev9 * > $ZIP_NAME.xz
               ls
 
+       - name: Build Info
+         run: cat ErfanGSIs/output/build-info.txt
+       
        - name: Upload 
          run: |
               cd ErfanGSIs/output/final
