@@ -5,7 +5,7 @@ on: [push]
 env:
   ROM_URL: https://iweb.dl.sourceforge.net/project/ancientrom/RMX1921/AncientOS-R-Society-v5.6-RMX1921-Iron-20211021-0952-Vanilla.zip
   ROM_NAME: Generic:Ancient-5.6
-  ZIP_NAME: Ancient-5.6-11-RK137GSI.img
+  ZIP_NAME: Ancient-5.6-11-RK137GSI
   TZ: Asia/Kolkata
 jobs:
   build:
@@ -44,10 +44,8 @@ jobs:
               cd ErfanGSIs/output
               ls
               sudo chmod -R 777 *.img
-              mkdir -p final ; cp *.img ./final ; cd final
-              ls
-              xz -cfev9 * > $ZIP_NAME.xz
-              ls
+              gzip -cfStv9 *.img ; rm -rf *.img
+              ls 
 
        - name: Build Info
          run: cat ErfanGSIs/output/build-info.txt
@@ -65,7 +63,11 @@ jobs:
               expect \"sftp> \"
               send \"cd ${{ secrets.SFDIR }}\r\"
               set timeout -1
-              send \"put *.xz\r\"
+              send \"mkdir $ZIP_NAME\r\"
+              expect \"sftp> \"
+              send \"cd $ZIP_NAME\r\"
+              set timeout -1
+              send \"put *\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
