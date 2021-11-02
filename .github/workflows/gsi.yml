@@ -44,7 +44,7 @@ jobs:
               cd ErfanGSIs/output
               ls
               sudo chmod -R 777 *.img
-              gzip -fStv9 *.img ; rm -rf *.img
+              gzip -fq9 *.img ; rm -rf *.img
               ls
        
        - name: Upload 
