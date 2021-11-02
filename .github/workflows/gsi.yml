@@ -38,21 +38,18 @@ jobs:
        - name: Download Rom & Generate GSI
          run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
        
-       - name: XZip
+       - name: GZip
          run: |
               sudo chmod -R 777 ErfanGSIs/output
               cd ErfanGSIs/output
               ls
               sudo chmod -R 777 *.img
-              gzip -cfStv9 *.img ; rm -rf *.img
-              ls 
-
-       - name: Build Info
-         run: cat ErfanGSIs/output/build-info.txt
+              gzip -fStv9 *.img ; rm -rf *.img
+              ls
        
        - name: Upload 
          run: |
-              cd ErfanGSIs/output/final
+              cd ErfanGSIs/output
               ls
               expect -c " 
               spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
