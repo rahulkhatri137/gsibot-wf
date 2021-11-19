@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://iweb.dl.sourceforge.net/project/ancientrom/RMX1921/AncientOS-R-Society-v5.6-RMX1921-Iron-20211021-0952-Vanilla.zip
-  ROM_NAME: Generic:Ancient-5.6
-  ZIP_NAME: Ancient-5.6-11-RK137GSI
+  ROM_URL: https://phoenixnap.dl.sourceforge.net/project/gsis137/SGSI/MIUI%20-%20MIUI-Beta%20-%20FGN7TWLX9L/MIUI-Beta-AB-12-20211118-RK137SGSI.img.gz
+  ROM_NAME: MIUI-Beta
+  ZIP_NAME: MIUI-Beta-12-RK137SGSI
   TZ: Asia/Kolkata
 jobs:
   build:
@@ -14,34 +14,29 @@ jobs:
     steps:
        - name: Checkout
          uses: actions/checkout@master
-       
-       - name: Clean Up
-         run: |
-           sudo -E apt-get clean
-           sudo apt install expect -y
            
        - name: Initializing environment
          run: |
             sudo -E apt-get -qq update
-            sudo -E apt-get -qq install git openjdk-8-jdk wget expect
+            sudo -E apt-get -qq install git aria2 simg2img expect
 
        
-       - name: Clone ErfanGSIs
-         run: git clone --recurse-submodules https://github.com/rahulkhatri137/ErfanGSIs
+       - name: Clone Debloat
+         run: git clone --recurse-submodules https://github.com/rahulkhatri137/Debloat
        
        - name: Setup
          run: |
-              sudo chmod -R 777 ErfanGSIs
-              cd ErfanGSIs
+              sudo chmod -R 777 Debloat
+              cd Debloat
               sudo bash setup.sh
        
        - name: Download Rom & Generate GSI
-         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
+         run: sudo ./Debloat/url2Debloat.sh $ROM_URL $ROM_NAME
        
        - name: GZip
          run: |
-              sudo chmod -R 777 ErfanGSIs/output
-              cd ErfanGSIs/output
+              sudo chmod -R 777 Debloat/output
+              cd Debloat/output
               ls
               sudo chmod -R 777 *.img
               gzip -fq9 *.img ; rm -rf *.img
@@ -49,7 +44,7 @@ jobs:
        
        - name: Upload 
          run: |
-              cd ErfanGSIs/output
+              cd Debloat/output
               ls
               expect -c " 
               spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
