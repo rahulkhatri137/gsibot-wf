@@ -44,7 +44,7 @@ jobs:
        
        - name: Upload 
          run: |
-              cd Debloat/output
+              cd Debloat/output/bbb
               ls
               expect -c " 
               spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
