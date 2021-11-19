@@ -21,7 +21,7 @@ jobs:
             sudo -E apt-get -qq install git aria2 simg2img expect
 
        
-       - name: Clone Debloat
+       - name: Clone Debloat tool
          run: git clone --recurse-submodules https://github.com/rahulkhatri137/Debloat -b test
        
        - name: Setup
@@ -30,21 +30,21 @@ jobs:
               cd Debloat
               sudo bash setup.sh
        
-       - name: Download Rom & Generate GSI
+       - name: Download & Debloat GSI
          run: cd Debloat && sudo ./url2Debloat.sh $ROM_URL $ROM_NAME
        
        - name: GZip
          run: |
               sudo chmod -R 777 Debloat/output
               cd Debloat/output
-              ls ; cat *info.txt
+              ls
               sudo chmod -R 777 *.img
               gzip -fq9 *.img ; rm -rf *.img
               ls
        
        - name: Upload 
          run: |
-              cd Debloat/output/bbb
+              cd Debloat/output
               ls
               expect -c " 
               spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
