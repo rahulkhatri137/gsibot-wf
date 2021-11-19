@@ -37,7 +37,7 @@ jobs:
          run: |
               sudo chmod -R 777 Debloat/output
               cd Debloat/output
-              ls
+              ls ; cat *info.txt
               sudo chmod -R 777 *.img
               gzip -fq9 *.img ; rm -rf *.img
               ls
