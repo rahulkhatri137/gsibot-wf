@@ -31,7 +31,7 @@ jobs:
               sudo bash setup.sh
        
        - name: Download Rom & Generate GSI
-         run: sudo ./Debloat/url2Debloat.sh $ROM_URL $ROM_NAME
+         run: cd Debloat && sudo ./url2Debloat.sh $ROM_URL $ROM_NAME
        
        - name: GZip
          run: |
