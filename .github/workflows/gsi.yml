@@ -22,7 +22,7 @@ jobs:
 
        
        - name: Clone Debloat
-         run: git clone --recurse-submodules https://github.com/rahulkhatri137/Debloat
+         run: git clone --recurse-submodules https://github.com/rahulkhatri137/Debloat -b test
        
        - name: Setup
          run: |
