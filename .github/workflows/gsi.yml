@@ -3,7 +3,7 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://drive.google.com/u/0/uc?export=download&confirm=HQqO&id=18gCSr93BounHJBr5tY19JrTksCQKYJoo
+  ROM_URL: http://dipesh-tech.dipeshtechmirror719.workers.dev/UL-ASUS_I01WD-ASUS-18.0610.2104.145-1.1.1-user.zip
   ROM_NAME: Generic:ZenUI-6
   ZIP_NAME: ZenUI-6-RK137GSI
   TZ: Asia/Kolkata
