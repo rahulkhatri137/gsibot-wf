@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://download.c.realme.com/osupdate/RMX3171_11_OTA_0190_all_6CL0F6Ae96Vg.ozip
-  ROM_NAME: ColorOS:RUI
-  ZIP_NAME: RUI-RK137GSI.img
+  ROM_URL: https://phoenixnap.dl.sourceforge.net/project/zenfone-max-m1-files/reloaded-caf/Reloaded-10.0-UNOFFICIAL-20200429-X00P.zip
+  ROM_NAME: Generic:Reloaded-10
+  ZIP_NAME: Reloaded-AB-11-20211125-RK137GSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
