@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://iweb.dl.sourceforge.net/project/ancientrom/RMX1921/AncientOS-R-Society-v5.6-RMX1921-Iron-20211021-0952-Vanilla.zip
-  ROM_NAME: Generic:Ancient-5.6
-  ZIP_NAME: Ancient-5.6-11-RK137GSI
+  ROM_URL: https://phoenixnap.dl.sourceforge.net/project/zenfone-max-m1-files/reloaded-caf/Reloaded-10.0-UNOFFICIAL-20200429-X00P.zip
+  ROM_NAME: Generic:Reloaded
+  ZIP_NAME: Reloaded-10-RK137GSI
   TZ: Asia/Kolkata
 jobs:
   build:
