@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://phoenixnap.dl.sourceforge.net/project/zenfone-max-m1-files/reloaded-caf/Reloaded-10.0-UNOFFICIAL-20200429-X00P.zip
-  ROM_NAME: Generic:Reloaded
-  ZIP_NAME: Reloaded-10-RK137GSI
+  ROM_URL: https://drive.google.com/u/0/uc?export=download&confirm=HQqO&id=18gCSr93BounHJBr5tY19JrTksCQKYJoo
+  ROM_NAME: Generic:ZenUI-6
+  ZIP_NAME: ZenUI-6-RK137GSI
   TZ: Asia/Kolkata
 jobs:
   build:
