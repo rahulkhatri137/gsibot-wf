@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: http://dipesh-tech.dipeshtechmirror719.workers.dev/UL-ASUS_I01WD-ASUS-18.0610.2104.145-1.1.1-user.zip
-  ROM_NAME: Generic:ZenUI-6
-  ZIP_NAME: ZenUI-6-RK137GSI
+  ROM_URL: https://phoenixnap.dl.sourceforge.net/project/realme-rmx1805/test/Havoc-OS-v4.11-20211121-RMX1805-Official.zip
+  ROM_NAME: Generic:Havoc
+  ZIP_NAME: Havoc-RK137GSI
   TZ: Asia/Kolkata
 jobs:
   build:
