@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://phoenixnap.dl.sourceforge.net/project/realme-rmx1805/test/Havoc-OS-v4.11-20211121-RMX1805-Official.zip
-  ROM_NAME: Generic:Havoc
-  ZIP_NAME: Havoc-RK137GSI
+  ROM_URL: https://liquidtelecom.dl.sourceforge.net/project/ancientrom/RMX1921/AncientOS-S-Alpha-Society-v6.0-RMX1921-Iron-20211121-1814-GApps.zip
+  ROM_NAME: Generic:Anc
+  ZIP_NAME: Anc-RK137GSI
   TZ: Asia/Kolkata
 jobs:
   build:
