@@ -5,7 +5,7 @@ on: [push]
 env:
   ROM_URL: https://liquidtelecom.dl.sourceforge.net/project/ancientrom/RMX1921/AncientOS-S-Alpha-Society-v6.0-RMX1921-Iron-20211121-1814-GApps.zip
   ROM_NAME: Generic:Anc
-  ZIP_NAME: Anc-P-RK137GSI
+  ZIP_NAME: Anc-t-RK137GSI
   TZ: Asia/Kolkata
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
 
        
        - name: Clone ErfanGSIs
-         run: git clone --recurse-submodules https://github.com/rahulkhatri137/ErfanGSI ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/rahulkhatri137/ErfanGSIs ErfanGSIs
        
        - name: Setup
          run: |
