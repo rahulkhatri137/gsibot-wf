@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://phoenixnap.dl.sourceforge.net/project/gsis137/SGSI/MIUI%20-%20MIUI-Beta%20-%20FGN7TWLX9L/MIUI-Beta-AB-12-20211118-RK137SGSI.img.gz
-  ROM_NAME: MIUI-Beta
-  ZIP_NAME: MIUI-Beta-12-RK137SGSI
+  ROM_URL: https://cfhcable.dl.sourceforge.net/project/gsis137/GSI/Pixel/Pixel-5%20-%20generic%20-%208GS4HOJIQK/Pixel-5-AB-11-20211217-generic-RK137GSI.img.gz
+  ROM_NAME: Pixel-5
+  ZIP_NAME: Pixel-11-RK137GSI
   TZ: Asia/Kolkata
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
 
        
        - name: Clone Debloat tool
-         run: git clone --recurse-submodules https://github.com/rahulkhatri137/Debloat -b test
+         run: git clone --recurse-submodules https://github.com/rahulkhatri137/Debloat -b main
        
        - name: Setup
          run: |
