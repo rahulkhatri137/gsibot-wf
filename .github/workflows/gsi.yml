@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://cfhcable.dl.sourceforge.net/project/gsis137/GSI/Pixel/Pixel-5%20-%20generic%20-%208GS4HOJIQK/Pixel-5-AB-11-20211217-generic-RK137GSI.img.gz
-  ROM_NAME: Pixel-5
-  ZIP_NAME: Pixel-11-RK137GSI
+  ROM_URL: https://master.dl.sourceforge.net/project/sgsi137/Nubia/RedMagicOS-4.5%20-%2011%20-%20NX669J/RedMagicOS-4.5-full-AB-11-20220220-NX669J-SGSI137.img.gz?viasf=1
+  ROM_NAME: RedMagic
+  ZIP_NAME: RedMagicOS-4.5
   TZ: Asia/Kolkata
 jobs:
   build:
