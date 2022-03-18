@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://phoenixnap.dl.sourceforge.net/project/zenfone-max-m1-files/reloaded-caf/Reloaded-10.0-UNOFFICIAL-20200429-X00P.zip
-  ROM_NAME: Generic:Reloaded-10
-  ZIP_NAME: Reloaded-AB-11-20211125-RK137GSI.img
+  ROM_URL: https://dipeshmirror.dipeshtech.workers.dev/0:/Cherish-OS-v2.10-20211010-1100-mido-OFFICIAL-Gapps.zip
+  ROM_NAME: Generic:CherishOS-11
+  ZIP_NAME: CherishOS-2.10-AB-11-OniiGSI.img
   TZ: Asia/Kolkata
 jobs:
   build:
