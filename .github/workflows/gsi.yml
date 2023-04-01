@@ -29,7 +29,7 @@ jobs:
          run: |
               sudo chmod -R 777 Debloat
               cd Debloat; aria2c https://udomain.dl.sourceforge.net/project/sgsi137/Test/build.zip; unzip *zip
-              aria2c -x16 https://downloadr2.apkmirror.com/wp-content/uploads/2023/03/85/6409113ac401c/com.google.android.inputmethod.latin_12.7.09.507749191-release-arm64-v8a-108047522_minAPI23(arm64-v8a)(nodpi)_apkmirror.com.apk?verify=1680366233-v9QhBe_4Dp2RCXArXPGZaaO6wWAufGQGY2FqSPHS6dE
+              aria2c -x16 "https://downloadr2.apkmirror.com/wp-content/uploads/2023/03/85/6409113ac401c/com.google.android.inputmethod.latin_12.7.09.507749191-release-arm64-v8a-108047522_minAPI23(arm64-v8a)(nodpi)_apkmirror.com.apk?verify=1680366233-v9QhBe_4Dp2RCXArXPGZaaO6wWAufGQGY2FqSPHS6dE"
               sudo bash setup.sh; simg2img *.img system.img
        
        - name: Download & Debloat GSI
