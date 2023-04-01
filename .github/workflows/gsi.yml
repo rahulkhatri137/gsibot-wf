@@ -8,7 +8,7 @@ env:
   TZ: Asia/Kolkata
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest 
 
     steps:
        - name: Checkout
@@ -27,7 +27,7 @@ jobs:
          run: |
               sudo chmod -R 777 Debloat
               cd Debloat; aria2c -x16 $ROM_URL
-              sudo bash setup.sh; simg2img*.img system.img
+              sudo bash setup.sh; simg2img *.img system.img
        
        - name: Download & Debloat GSI
          run: cd Debloat && sudo ./url2Debloat.sh system.img $ROM_NAME
