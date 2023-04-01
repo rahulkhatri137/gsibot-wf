@@ -3,9 +3,8 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://master.dl.sourceforge.net/project/sgsi137/Nubia/RedMagicOS-4.5%20-%2011%20-%20NX669J/RedMagicOS-4.5-full-AB-11-20220220-NX669J-SGSI137.img.gz?viasf=1
-  ROM_NAME: RedMagic
-  ZIP_NAME: RedMagicOS-4.5
+  ROM_URL: https://master.dl.sourceforge.net/project/sgsi137/Test/coso.img?viasf=1
+  ROM_NAME: ColorOS
   TZ: Asia/Kolkata
 jobs:
   build:
@@ -18,11 +17,11 @@ jobs:
        - name: Initializing environment
          run: |
             sudo -E apt-get -qq update
-            sudo -E apt-get -qq install git aria2 simg2img expect
+            sudo -E apt-get -qq install git aria2 img2simg simg2img expect tree
 
        
        - name: Clone Debloat tool
-         run: git clone --recurse-submodules https://github.com/rahulkhatri137/Debloat -b main
+         run: git clone --recurse-submodules https://github.com/rahulkhatri137/Debloat -b cos
        
        - name: Setup
          run: |
@@ -37,10 +36,7 @@ jobs:
          run: |
               sudo chmod -R 777 Debloat/output
               cd Debloat/output
-              ls
-              sudo chmod -R 777 *.img
-              gzip -fq9 *.img ; rm -rf *.img
-              ls
+              img2simg ColorOS*.img cos.img ; sudo rm Colo*.img
        
        - name: Upload 
          run: |
@@ -53,13 +49,12 @@ jobs:
               expect \"Password\"        
               send \"${{ secrets.SFPASS }}\r\"
               expect \"sftp> \"
-              send \"cd ${{ secrets.SFDIR }}\r\"
+              send \"cd /home/pfs/project/sgsi137\r\"
               set timeout -1
-              send \"mkdir $ZIP_NAME\r\"
               expect \"sftp> \"
-              send \"cd $ZIP_NAME\r\"
+              send \"cd Test/Cos\r\"
               set timeout -1
-              send \"put *\r\"
+              send \"put system.img\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
