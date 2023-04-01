@@ -39,7 +39,7 @@ jobs:
          run: |
               sudo chmod -R 777 Debloat/output
               cd Debloat/output; mv ../cos_f*.img .; ls
-              img2simg ColorOS*.img cos_deb.img ; sudo rm Colo*.img
+              img2simg ColorOS*.img cos_deb.img ; sudo rm Colo*.img; img2simg cos_firmware.img cos_stock.img
        
        - name: Upload 
          run: |
