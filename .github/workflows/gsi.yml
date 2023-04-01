@@ -26,11 +26,11 @@ jobs:
        - name: Setup
          run: |
               sudo chmod -R 777 Debloat
-              cd Debloat
-              sudo bash setup.sh
+              cd Debloat; aria2c -x16 $ROM_URL
+              sudo bash setup.sh; simg2img*.img system.img
        
        - name: Download & Debloat GSI
-         run: cd Debloat && sudo ./url2Debloat.sh $ROM_URL $ROM_NAME
+         run: cd Debloat && sudo ./url2Debloat.sh system.img $ROM_NAME
        
        - name: GZip
          run: |
