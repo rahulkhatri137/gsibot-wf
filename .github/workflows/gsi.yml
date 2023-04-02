@@ -19,11 +19,10 @@ jobs:
             sudo -E apt-get -qq update
             sudo -E apt-get -qq install git aria2 img2simg simg2img expect tree unzip
 
-       
        - name: Clone Debloat tool
          run: |
               git clone --recurse-submodules https://github.com/rahulkhatri137/Debloat -b cos
-              cd Debloat; aria2c -x16 "https://downloadr2.apkmirror.com/wp-content/uploads/2023/03/85/6409113ac401c/com.google.android.inputmethod.latin_12.7.09.507749191-release-arm64-v8a-108047522_minAPI23(arm64-v8a)(nodpi)_apkmirror.com.apk?verify=1680403848-KmcmzeBtpGLiYbkv_cYqweOMaa0T7eHT7EqVSz905SA" 
+              cd Debloat; aria2c -x16 "https://downloadr2.apkmirror.com/wp-content/uploads/2023/03/85/6409113ac401c/com.google.android.inputmethod.latin_12.7.09.507749191-release-arm64-v8a-108047522_minAPI23(arm64-v8a)(nodpi)_apkmirror.com.apk?verify=1680434472-HL51EhWWvoADTppkjkIFGsh1HLZfimI8e6xPRNzWVm4" 
  
        - name: Setup
          run: |
