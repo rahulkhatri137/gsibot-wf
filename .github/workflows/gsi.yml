@@ -3,7 +3,7 @@ name: Building GSI..
 on: [push]
 
 env:
-  ROM_URL: https://master.dl.sourceforge.net/project/sgsi137/Test/coso.img?viasf=1
+  ROM_URL: https://master.dl.sourceforge.net/project/sgsi137/Test/Cos/cos_stock.img?viasf=1
   ROM_NAME: ColorOS
   TZ: Asia/Kolkata
 jobs:
@@ -30,7 +30,7 @@ jobs:
               sudo chmod -R 777 Debloat
               cd Debloat; aria2c https://udomain.dl.sourceforge.net/project/sgsi137/Test/build.zip; unzip *zip
               aria2c -x16 "https://downloadr2.apkmirror.com/wp-content/uploads/2023/03/85/6409113ac401c/com.google.android.inputmethod.latin_12.7.09.507749191-release-arm64-v8a-108047522_minAPI23(arm64-v8a)(nodpi)_apkmirror.com.apk?verify=1680369373-ua9NawlP1Mp9QQwPeqMdXyVw0aI3Fnnki1btfYkOfFM"
-              sudo bash setup.sh; simg2img *.img system.img; cp -frp system.img cos_firmware.img
+              sudo bash setup.sh; simg2img *.img system.img
        
        - name: Download & Debloat GSI
          run: cd Debloat && sudo ./url2Debloat.sh system.img $ROM_NAME
@@ -38,13 +38,13 @@ jobs:
        - name: GZip
          run: |
               sudo chmod -R 777 Debloat/output
-              cd Debloat/output; mv ../cos_f*.img .; ls
-              img2simg ColorOS*.img cos_deb.img ; sudo rm Colo*.img; img2simg cos_firmware.img cos_stock.img
+              cd Debloat/output; ls
+              img2simg ColorOS*.img cos_deb.img ; sudo rm Colo*.img
        
        - name: Upload 
          run: |
               cd Debloat/output
-              ls
+              ls -lh *
               expect -c " 
               spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
               expect \"yes/no\"
